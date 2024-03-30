@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicando posicionamento</title>
+    <style>
+        button#resultado{
+            color: rgba(255, 68, 255, 0.671);
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center">explicando como posicionar mais de uma tag repitida em locais diferentes</h1>
+
+    <button id="resultado"><a  href="selteor01.html" target="_self" rel="next">VER RESULTADO.</a></button>
+
+        <p>Iremos criar um index em CSS para fazer essas mudanças de posição nos titulo h1, h2 e parágrafos.</p>
+
+        <p> Iremos criar uma identificação para as tags em HTML, por ex: &lt;h1 <abbr title="essa função/comando cria uma identificação para tag">id=</abbr>   <abbr title="Colocar o nome desejado ex: &lt;h1 id='principal'&gt;">****&gt; </abbr></p>
+
+        <p >Identificação para CSS é utilizado #<abbr title="colocar nome de identificação ex: #pricipal">-----</abbr> </p>
+
+        <p><pre> exemplo de como ficou o nosso index em css:
+
+            @charset "UTF-8";
+
+body {
+    background-color: rgba(193, 255, 101, 0.853);
+}
+
+h1 {
+    color: rgb(127, 188, 37);
+}
+
+h1#principal { text-align: center;
+
+    color: palevioletred;
+
+    background-color: rgb(254, 206, 222);
+
+}
+
+h2 {
+    color: rgba(77, 129, 0, 0.87);
+}
+        </pre></p>
+
+        <p>
+            Em html o comando para dar nome a tag é id= <abbr title="colocar nome ex:&lt;h1 id='basico'&gt;">""</abbr> e em CSS é <abbr title="ex: nome da tag em HTML: &lt;h1 id='basico'&gt; NOME do seletor em CSS: h1#basico {}">#nomedoid</abbr>
+        </p>
+
+        <p><mark>OBS.:</mark> o certo é ter apenas um id por tag, se quiser a mesma configuração para mais de uma tag, o comando correto e class, e para usar ele em CSS, tem que comer com ponto: .nomedoseletor</p>
+
+        <p>A tag <abbr title="destaca um texto, sendo possivel inserir comandos.">&lt;span&gt;&lt;/span&gt;</abbr> </p>
+
+        <p>ao olhar o resultado vai ver duas marcação, realizei inerindo duas tag span com a mesma class cujo o nome ficou assim <abbr title=" &lt;span class='teste'&gt;&lt;/span&gt; ">ex</abbr>.</p>
+
+        <p><pre>E ao inserir na css ficou assim a configuração:
+
+            .teste {
+                background-color: palevioletred;
+                font-weight: 700;
+            }
+        </pre></p>
+
+
+     
+</body>
+</html>

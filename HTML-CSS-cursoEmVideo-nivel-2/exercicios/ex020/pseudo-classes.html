@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        span#mudarrosa{
+            background-color: rgba(255, 157, 190, 0.669);
+            font-weight: 900;
+        }
+
+        span#tamanho {
+            font-size: 2em;
+        }
+            div {
+                background-color: rgb(0, 255, 60);
+                display: inline-block;
+                text-align: center;
+                height: 200px;
+                width: 200px;
+            }
+            
+           /* div#d1{
+                background-color: yellowgreen;
+            }
+
+            div#d2{
+                background-color: saddlebrown;
+            }
+
+            div#d3{
+                background-color: slategrey;
+            }
+            
+            essas três configurações foi para ver as como ficaria a configuração
+            */
+
+            div:hover{
+                background-color: yellow;
+            }
+    </style>
+</head>
+<body>
+<h1>Inserindo uma pseudo-classe com  <abbr title="igual na configuração da css representa um pseudo-classe, um exemplo de pseudo-classe seria: 
+    div:hover {
+    background-color: yellow
+ }"><span id="tamanho">:</span></abbr> </h1>
+
+ <hr>
+    <div id="d1">01</div>
+
+    <div id="d2">02</div>
+
+    <div id="d3">03</div>
+
+
+
+
+
+
+    <p>Ao colocarmos comando dentro de um seletor, para configurar a altura, usamos <abbr title="ex: height: 200px;">height:</abbr></p>
+    
+    <p>Para mudarmos a largura, usamos <abbr title=" ex: width: 200px;">width:</abbr></p>
+
+    <p>Para adicionarmos borda, usamos o comando <abbr title="podemos criar dentro dele um comando abreviado/shothand ex: border: (1px é o tamanho pondedo ser maior) (sold é o tipo podendo ser outro) (black é a cor podendo ser outra) ficando Assim: border: 1px sold black ">border:</abbr></p>
+
+    <p>Podemos também configurar a posição delas, podendo colocar uma do lado da outra, com o comando <abbr title="ex: [display: inline-block] porém podemos inserir outras posições">display:</abbr></p>
+
+    <p> <mark>OBS.:</mark>Pode ser inserido uma <span id="mudarrosa">pseudo-classe</span>, ela é representada pela simbologia <abbr title=": igual na configuração da css representa um pseudo-classe, um exemplo de pseudo-classe seria: 
+        div:hover {
+        background-color: yellow
+     } "><span id="tamanho">:</span></abbr> <br>
+     
+     ela permite adicionar muitas outra configurações, como do exemplo superior, fou usado a função <abbr title="permite passar o cursor do mouse por cima de algo, e muda a cor que estiver estabelecida dentro dele. ex:
+
+     div:hover {
+        background-color: yellow
+     }
+     ">:hover{}</abbr> </p>
+     <hr>
+
+     <h2>Criando texto invisivel, so aprece ao passar por cima de certa palavra</h2>
+
+     <p> <button><a href="explicando-texto-invivel.html">MAIS DETALHES.</a></button> </p>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Mustang' ;
+            src: url('fonte-baixada/Black Mustang.ttf') format('opentype');
+            /*font-weight: normal;*/
+            font-style: normal;
+            font-weight:normal;
+        }
+        @font-face {
+            font-family:'wish' ;
+            src: url('fonte-baixada/Angel wish.ttf') format('opentype');
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Mustang', Times, serif;
+            font-size: 3em;
+            /*font-weight: normal;*/
+            color: rgba(255, 70, 70, 0.854);
+        }
+        
+        p {
+            font-family: 'wish', Times, serif;
+            font: 3em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1><abbr title="Fontes Externa/baixada">Fontes Externa/baixada</abbr></h1>
+    
+
+<p><abbr title="@font-face permite cria uma regra/seletor para incrementar um estilo de font em css.">@font-face</abbr> ex:</p>
+<p>
+    <pre>
+        @font-face {
+            <abbr title="aqui podemos definir o nome da familia do jeito que quisermos, pois se trata de uma fonte baixada.">font-family: ;</abbr>
+            src: url(); ai podemos inserir mais estilo: format()
+            <abbr title="comando para o peso em negrito">font-weight</abbr>: normal;
+            <abbr title="permite inerir italico">font-style:</abbr> normal;
+        }
+    </pre>
+</p>
+
+</p>
+
+<p><pre>
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+</pre>
+</p>
+
+     <p><mark>OBS.:</mark><abbr title="site de fontes, aonde possibilita a busca de Arquivos de fonte disponíveis gratuitamente. Procurar por ordem alfabética, por estilo, por autor ou por popularidade.">DaFont</abbr></p>
+</body>
+</html>

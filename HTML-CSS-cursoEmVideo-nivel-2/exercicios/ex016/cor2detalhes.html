@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicalçao do index cor02</title>
+</head>
+<body>
+    
+    <h1>Testando Gradientes</h1>
+
+<a href="cor01.html" target="_self" rel="prev">HOME.</a>
+
+    <h2>exemplo</h2>
+
+<a href="cor02.html" target="_self" rel="next">RESULTADO.</a>
+
+    <p>
+        Irei colocar o fundo do instagram como background-color na tag &lt;body&gt; porém para fazer esse degrade irei usar o comando background-image: linear-gradient:
+            <ul>
+                <li>#4F5FD1</li>
+                <li>#B030A6</li>
+                <li>#CE2F77</li>
+                <li>#EC5E41</li>
+                <li>#FB9734</li>
+                <li>#FED97D</li>
+            </ul>
+    </p>
+
+    <p>para ver o exemplo <a href="cor02.html" target="_self" rel="next">EXEMPLO DE CONFIGURAÇÃO.</a></p>
+
+<h3>Explicação</h3>
+<p>Criamos a tag  <abbr title="Está é a tag para fazer a estilização interna do codigo, utilizando css.">&lt;style&gt;&lt;/style&gt;</abbr> abaixo da tag <abbr title="Está é tag para titúlo da página, deixando o nome da página na guia do navegador ">&lt;title&gt;&lt;/title&gt;</abbr> </p>
+<p>
+    <pre>
+        &lt;style&gt;
+    
+        *{ [ *{} ] é a configuração globais das css
+            height: 100%;
+        }
+    
+        body { background-image: linear-gradient(to bottom, #4F5FD1,#B030A6, #CE2F77,#EC5E41,#FB9734,#FED97D);
+                background-attachment: fixed;
+    
+            }
+    
+        &lt;/style&gt;
+    </pre>
+</p>
+
+
+<p>*{} é a configuração globais das css</p>
+
+<p>
+O comando background-image, permite com que insera a cor de fundo da page, adicionando o comando background-image: linear-gradient, ai é possivel mesclar quantas cores quiser, tanto da esquerda para a direita, quanto de cemia para baixo e ou vise e versa, so é preciso inser esse comando dentro () e em inglés, exemplo  background-image: linear-gradient(to bottom,  white, blue);
+</p> 
+
+<p>
+porém ao utilizar, será necesario adicinar mai um comando para deixar a página fixa, ou deixar a página compactada, endo esse comando background-attachment: fixed;.
+Esté comando fixa a pagina, quando deslizar a pagina o fundo fica fixo.
+</p>
+
+<p>
+    Irei colocar o fundo do instagram como background-color na tag &lt;body&gt; porém para fazer esse degrade irei usar o comando background-image: linear-gradient:
+<ol type="1">
+<li>#4F5FD1</li>
+<li>#B030A6</li>
+<li>#CE2F77</li>
+<li>#EC5E41</li>
+<li>#FB9734</li>
+<li>#FED97D</li>
+</ol> 
+</p>
+
+<p>
+    <mark>OBS.:</mark>sempre quando for utilizar paletas, utilizar no máximo de 3 a 5 cores, para não ficar muita cor e para não faltar cor. 
+</p>
+    
+</body>
+</html>

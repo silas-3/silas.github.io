@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links personalizados</title>
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: rgba(253, 139, 177, 0.875);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited{
+    color: rgb(255, 0, 255);
+}
+
+a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+a:active{
+    color: rgb(76, 3, 3);
+}
+
+.especial{
+    background-color: rgb(0, 255, 0)
+}
+
+.especial::before{
+    content: '⇒';
+}
+
+.especial::after{
+    content:'⇐' ;
+
+}
+
+div > pre > p {
+    display: none;
+}
+div :hover > p {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.pexels.com/pt-br/" class="especial">Site de Imagens.</a></li>
+
+        <li><a href="https://mp3converter.fr/pt/youtube-mp3-v10/">Site Para Converter Video em Audio MP3.</a></li>
+
+        <li><a href="https://favicon.io/">Site Para Criação de Favicon.</a></li>
+
+    </ul>
+    <hr>
+
+    <h4>Codigo usado para estilizar o exemplo acima.</h4>
+
+    <div><pre>
+        
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        
+            a{
+                color: rgba(253, 139, 177, 0.875);
+                text-decoration: none;
+                font-weight: bold;
+            }
+        
+            a:<abbr title="Ao visitar a página pela primeira vez, ela muda a cor para indicar que já abrimos o link alguma vez">visited</abbr><p id="escondido">Ao visitar a página pela primeira vez, ela muda a cor para indicar que já abrimos o link alguma vez.</p>{
+                color: rgb(99, 4, 99);
+            }
+        
+            a:<abbr title="Deixando estilizado para ter interação ao passar o cursor sobre o link, ele mudar para o estilo configurado">hover</abbr><p>Deixando estilizado para ter interação ao passar o cursor sobre o link, ele mudar para o estilo configurado.</p>{
+                color: yellow;
+                text-decoration: underline;
+            }
+        
+            a:<abbr title="Ao ativarmos o link ele muda de cor rapidamente para mostrar que clicamos nele, se você clicar e segurar, para não abrir, ira ver a diferença de cor.">active</abbr><p>Ao ativarmos o link ele muda de cor rapidamente para mostrar que clicamos nele, se você clicar e segurar, para não abrir, ira ver a diferença de cor.</p>{
+                color: rgb(91, 0, 0);
+            }
+        
+            <abbr title="Esta foi a criação de uma class epecifica que eu quis adicionar uma configuração apenas pra ela, ai nomeamos ela como: .especial">.especial</abbr><p>Esta foi a criação de uma class epecifica que eu quis adicionar uma configuração apenas pra ela, ai nomeamos ela como: .especial</p>{
+                background-color: rgb(0, 255, 0)
+            }
+        
+            <abbr title="Esta foi a criação de uma class epecifica que eu quis adicionar uma configuração apenas pra ela, ai nomeamos ela como: .especial">.especial</abbr>::before{
+                content: '⇒';
+            }
+        
+            <abbr title="Esta foi a criação de uma class epecifica que eu quis adicionar uma configuração apenas pra ela, ai nomeamos ela como: .especial">.especial</abbr>::after{
+                content:'⇐' ;
+        
+            }
+    </pre>
+        
+</div>
+</body>
+</html>

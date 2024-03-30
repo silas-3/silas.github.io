@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixa</title>
+    <style>
+        h1{ 
+                font-size: xxx-large;
+                height: 100px;
+                width: 750px;
+                border-style: solid;
+                border-width: 10px;
+                background-color: brown;
+                text-align: center;
+                font-weight: bolder;
+                font-style: italic;
+                border-color: blue;
+                padding-top: 189px;
+                padding-right: 335px;
+                padding-bottom: 50px;
+                padding-left: 15px;
+                margin: auto;
+                margin-bottom: 50px;
+
+                                                        /*
+                                                        font-size:xxx-large;
+                                                        height: 100px;
+                                                        width: 750px;
+                                                        border-style: solid;
+                                                        border-width: 10px;
+                                                        background-color: brown;
+                                                        text-align: center;
+                                                        font-weight: bolder; 
+                                                        font-style: italic;
+                                                        border-color: blue;
+                                                         */
+
+                                                         /*OBS.:Essa foi o modelo original. ai troquei por essa outra configuração que fiz na ferramenta do programador.*/
+}
+
+a{
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(205, 158, 249);
+    
+}
+
+pre{
+    border-width: 10px;
+    border-style: solid;
+    border-color: wheat;
+    background-color: skyblue;
+    outline-color: orange;
+    outline-style: dashed;
+    outline-width: 10px;
+    width: 350px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    margin-left: 50px;
+    
+}
+
+.configurar{
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(196, 249, 158);
+    font-weight: bolder;
+    
+}
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, ma os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo funciona. </p>
+
+    <p> <mark style="background-color: palevioletred;" >OBS.:</mark> Ao colocarmos # na href do link, ele destaca na página, porém não direciona para nenhum lugar, EX: &lt;a href="#"&gt;, ai ele fica como no exemplo destesta página. </p>
+
+
+<hr>
+    <h2>Dica para testar.</h2>
+
+    <p>Ao abrimos uma página podemos ver a configuração ou até mesmo modificar o site para testarmos a página, para vermos uma melhor configuração. <span class="configurar">F12 ou ctrl+shift+i ou ir nas configurações e clicar: inspecinar.</span></p>
+
+    <p>Depois que entrarmos nas configurações de programador, podemos testar divesas configurações para ver como fica a página, e se gostarmos da configuração, podemos copiar e colocar no vs code. Um exemplo disso foi essa configuração que fiz por lá: 
+
+<pre>
+    h1{
+        font-size: xxx-large;
+        height: 100px;
+        width: 750px;
+        border-style: solid;
+        border-width: 10px;
+        background-color: brown;
+        text-align: center;
+        font-weight: bolder;
+        font-style: italic;
+        border-color: blue;
+        padding-top: 189px;
+        padding-right: 335px;
+        padding-bottom: 50px;
+        padding-left: 15px;
+        margin: auto;
+    }
+</pre>
+    </p>
+
+    <p>Podemos fazer uma shothand na função <strong>padding:</strong>, usando a hierarquia em sentido horario, ficando assim: <br>
+        padding: <abbr title="top traduzindo seria topo">10px</abbr> <abbr title="rigth traduzindo direita ">10px</abbr> <abbr title="bottom traduzindo seria baixo">10px</abbr> <abbr title="left trazuindo seria esquerdo">10px</abbr>. <br>
+Agora se todas as posições forém a mesma medida basta colocar <strong>padding:</strong> <abbr title="ex padding: 10px;">o tamanho e a unidade de medida;</abbr>
+    </p>
+    
+    <p>Podemos também centralizar as coisas/objetos usando a função <strong>margian:</strong>, tanto com comando para <abbr title="left">esquerda</abbr>, <abbr title="height">direita</abbr>, <abbr title="top">topo</abbr> ou <abbr title="bottom">baixo</abbr> ou <abbr title="auto">automaticamente</abbr>.
+    sendo necessario apenas colocar a distancia com a unidade de midida. </p>
+
+    <p>
+        Podemos fazer uma shothand na função margian, usando a hierarquia em sentido horario, ficando assim: <br>
+            margian: <abbr title="top traduzindo seria topo">10px</abbr> <abbr title="rigth traduzindo direita ">10px</abbr> <abbr title="bottom traduzindo seria baixo">10px</abbr> <abbr title="left trazuindo seria esquerdo">10px</abbr>. <br>
+        Agora se todas as posições forém a mesma medida basta colocar <strong>margian:</strong> <abbr title="ex margian: 10px;">o tamanho e a unidade de medida;</abbr>
+    </p>
+
+    <p>podemos também tracejar a bordar, aumentar o tamanho, mudar a cor e deixar automatico etc. usando a função outiline-width: <abbr title="ex: 5px;">colocar tamano e unidade de medida</abbr>; e definir o estilo com outiline-style: <abbr title="ex: dashed. deixa tracejado">colocar o estilo</abbr>; e definir cor com outiline-color: <abbr title="ex: orange">colocar cor</abbr>;.</p>
+
+    <p>Podemos também usar a função display, podendo alterar o modelo da caracteristica normal de um elemento ex: <br>
+    display: inline; fica no estilo de linha.
+<br>
+display: block; fica como um bloco e quebra as linhas.
+
+
+    </p>
+</body>
+</html>
+
+
+
+<!-- 
+    font-size: xxx-large;
+    height: 100px;
+    width: 750px;
+    border-style: solid;
+    border-width: 10px;
+    background-color: brown;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    border-color: blue;
+    padding-top: 189px;
+    padding-right: 335px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+-->
+
+

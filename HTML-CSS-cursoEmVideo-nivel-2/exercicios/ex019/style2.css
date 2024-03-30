@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    background-color:#A68C6D;
+}
+
+h1 {
+    color:#F2D7B6;
+}
+
+h1#principal { text-align: center;
+
+    color: #D97B59;
+
+    background-color: #6e413d57;
+
+}
+
+h2 {
+    color: #592C28;
+}
+
+button#casa {
+    text-align: center;
+}
+
+.teste {
+    background-color: palevioletred;
+    font-weight: 700;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(206, 243, 255);
+            margin: 15px;
+        }
+
+        header{
+            background-color: rgb(253, 253, 253);
+            padding: 10px;
+            margin: 15px;
+        }
+
+        nav{
+            background-color: rgb(139, 255, 255);
+            padding: 5px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: rgb(115, 101, 101);
+            font-weight: bold;
+            margin: 30px;
+            box-shadow:  10px 1px 10px black;;
+        }
+
+        nav > a:hover{ text-decoration: underline;
+
+        }
+
+        article{
+            background-color: rgb(212, 186, 153); /*antiquewhite;*/
+            padding: 10px;
+        }
+
+        article > aside{
+            background-color: antiquewhite;
+        }
+        footer{
+            background-color: rgb(59, 54, 54);
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin: 15px;
+        }
+
+        footer > p{ margin: 0px;
+
+        }
+
+        #noticias{ margin: 15px;
+            padding: 10px;
+            background-color: rgb(253, 253, 253);
+
+        }
+
+         .explicacaopre{  
+        background-color: white;
+        padding-top: 15px;
+        padding-right: 15px ;
+        padding-bottom: 0px;
+        padding-left: 15px;
+        margin: 15px;
+        border-radius: 10px;
+        
+        }
+      
+      .explicacaopre > .asidetestepre{
+            background-color: rgb(255, 123, 211);;
+            font-weight: bold;
+            border-radius: 15px 0px 15px 15px;
+        }
+
+        .asidetestepre > .ptestepre{
+            color: rgb(156, 255, 8);  
+        }
+
+        div{
+            background-color: white;
+        padding-top: 15px;
+        padding-right: 15px ;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        margin: 15px;
+        border-radius: 50%;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header> 
+    <h1>Meu site</h1>
+        <nav>
+                <a href="#">Link Sem Função</a>
+                <a href="#">Link Sem Função</a>
+                <a href="#">Link Sem Função</a>
+
+        </nav>
+</header>
+
+    <main>
+        <section id="assuntos">
+            
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio alias, facilis, adipisci eveniet velit voluptates consequuntur voluptas, rerum necessitatibus rem possimus saepe quam quos aspernatur quas dolores quod aliquam.</p>
+                <aside> 
+                    <p> Artigo escrito pela função lorem do vs code</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+<footer>
+    <p> Ensinado pelo Curso em Video </p>
+</footer>
+    
+
+    <pre class="explicacaopre">
+        <aside class="asidetestepre">
+            <p class="ptestepre">
+                OBS.: abrir backstage do código no vs code, para intender as as funções:
+                
+                <abbr title="tradução de header: cabeçalho.">&lt;header&gt;&lt;/header&gt;</abbr>
+                
+                <abbr title=" tradução de nav: navegação">&lt;nav&gt;&lt;/nav&gt;</abbr>
+                
+                <abbr title="tradução de main: principal">&lt;main&gt;&lt;/main&gt; </abbr>
+                
+                <abbr title="tradução de section: seção">&lt;section&gt;&lt;/section&gt;</abbr>
+                
+                <abbr title="tradução de article: artigo">&lt;article&gt;&lt;/article&gt;</abbr>
+                
+                <abbr title="tradução de aside: aparte">&lt;aside&gt;&lt;/aside&gt;</abbr>
+                
+                <abbr title="traduçaõ de footer: rodapé">&lt;footer&gt;&lt;/footer&gt;</abbr>
+
+                <abbr title=" comando inserido dentro de um seletor na css, cria sombra ao fundo das caixas podendo ser mais clara ou escura ou borrada ou de qualquer cor, sendo recomendado sempre usar black, colocando as configurações de acordo com a medida usada, um exemplo seria  box-shadow: 1px 1px black;">box-shadow:</abbr>
+
+                <abbr title="border-radius, traduzindo e raio da borda, onde faz o arredondamento dos cantos, colocamos o nome e a unidade de medida e é possivel criar uma shorthand exemplo border-radius: 10px 0px 15px 8px; é possivel tabem fazer a caixa virar um circulo colocando em porcentagem, ex: border-radius:50%;">border-radius:</abbr>
+            </p>
+        </aside>
+    </pre>
+
+    <div>Usando: <abbr title="border-radius, traduzindo é raio da borda, onde faz o arredondamento dos cantos, colocamos o nome e a unidade de medida e é possivel criar uma shorthand exemplo border-radius: 10px 0px 15px 8px; é possivel também fazer a caixa virar um circulo colocando em porcentagem, ex: border-radius:50%;"><span style="font-weight: 700;">border-radius:</span></abbr>:</div>
+
+
+
+
+</body>
+</html>

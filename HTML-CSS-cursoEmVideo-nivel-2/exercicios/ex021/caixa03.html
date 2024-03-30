@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas personalizas</title>
+    <style>
+        h1{
+            border: 15px solid black;
+            padding: 10px;
+            border-image-source: url('borda-personalizada-gimp.png');
+            border-image-slice: 150;
+            border-image-repeat: repeat;
+            border-width: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordas personalizas</h1>
+    <p style="font-size: xx-large;">Geralmente fazemos ela por um editor e inserimos a imagem</p>
+
+    <p>
+        <span style="background-color: aqua;">COIDIGO INSERIDO</span>
+        <pre style="font-size: x-large;">h1{
+            <abbr title="é presico ter uma borda para segurar o local, então independente de ser uma shorthand ou não, a borda precisa existir.">border: 15px solid black;</abbr>
+            padding: 10px;
+            border-image-source: url('borda-personalizada-gimp.png');
+            border-image-slice: 150;
+            border-image-repeat: repeat;
+            <abbr title="aqui eu quis aumentar, pois a imagem ficou redimencionada pequena">border-width: 50px;</abbr>
+            
+            ou podemos fazer uma shorthand.
+
+            border-image: url('borda-personalizada-gimp.png') 150 repeat;
+            
+        }</pre style="font-size: x-large;">
+    </p>
+</body>
+</html>

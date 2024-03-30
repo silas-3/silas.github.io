@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes em CSS</title>
+
+    <style>
+    
+    *{ /* [ *{} ] é a configuração globais das css */
+        height: 100%;
+    }
+        body { background-image: linear-gradient(to bottom, #4F5FD1,#B030A6, #CE2F77,#EC5E41,#FB9734,#FED97D);
+            background-attachment: fixed;
+
+        }
+    </style>
+
+
+    <!-- *{} é a configuração globais das css-->
+
+    <!-- O comando background-image, permite com que insera a cor de fundo da page, adicionando o comando background-image: linear-gradient, ai é possivel mesclar quantas cores quiser, tanto da esquerda para a direita, quanto de cemia para baixo e ou vise e versa, so é preciso inser esse comando dentro () e em inglés, exemplo  background-image: linear-gradient(to bottom,  white, blue); -->
+    
+     <!--   porém ao utilizar, será necesario adicinar mai um comando para deixar a página fixa, ou deixar a página compactada, endo esse comando background-attachment: fixed;.
+        Esté comando fixa a pagina, quando deslizar a pagina o fundo fica fixo.
+    -->
+</head>
+<body>
+    <h1>Testando Gradientes <br>
+        <a href="cor01.html" target="_self" rel="prev">HOME.</a> 
+        <a href="cor2detalhes.html" target="_self"><p style="font-size: 15px;">VOLTAR PÁGINA.</p></a> </h1>
+        
+    <h2>exemplo</h2>
+    <p>
+        Irei colocar o fundo do instagram como background-color na tag &lt;body&gt; porém para fazer esse degrade irei usar o comando background-image: linear-gradient:
+            #4F5FD1 <br>
+            #B030A6 <br>
+            #CE2F77 <br>
+            #EC5E41 <br>
+            #FB9734 <br>
+            #FED97D <br>
+    </p>
+
+
+
+    <!-- #1446A0,#5C95FF, #B9E6FF 
+    sem querer fiz esse degrade e gostei.
+    -->
+</body>
+</html>
