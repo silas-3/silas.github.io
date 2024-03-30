@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html</title>
+</head>
+<body>
+
+
+    <h1>Imagem dinâmica (<abbr title="permite criar varias fonte"> &lt;picture&gt;&lt;/picture&gt;</abbr> + <abbr title="inserindo a tag &lt;source media= *(min-width: )* srcset=*digitar a pasta/nome da imagem*&gt;, por padão ela vem min, alterar para max, no caso de minimo para maximo e ela permite inserir os tamanhos da imagem e a flexibilizar o tamanho conforme muda o tamanho da página.">
+        &lt;source media="(min-width: )" srcset=""&gt; )</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </abbr></p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens-gimp/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens-gimp/foto-m.png" type="image/png">
+        <img src="imagens-gimp/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+
+
+
+    <p><mark style="background-color: rgb(123, 167, 255);">OBS:</mark> a tag &lt;picture&gt;&lt;/picture&gt; permite criar varias fonte, e inserindo a tag &lt;source media="(min-width: )" srcset=""&gt;, por padão ela vem min, alterar para max, no caso de minimo para maximo e ela permite inserir os tamanhos da imagem e a flexibilizar o tamanho conforme muda o tamanho da página. </p>
+    <p>
+        Deve se prestar a atenção ao inerir a tag &lt;source media="(min-width: )" srcset=""&gt;, na ordem, pois as imagem menor que ocupam menos espaço/(px), devem ser as primeiras e assim sucetivamente, da menor até a maior, igual a imagem do backstage.
+    </p>
+
+    <p>
+      print do backstage:
+    </p>
+<img src="imagens-gimp/tag-source-backstage.png" alt="print do backstage da tag source">
+
+<!-- Adicinando Audio-->
+<hr>
+<h1>Adicinando Audio ( &lt;audio src=<abbr title="digitar nome do arquivo">""</abbr> controls autoplay&gt;&lt;/audio&gt; )</h1>
+
+<p>música piano</p><audio src="midia/Allemande (Sting) - Wahneta Meixsell.mp3" controls autoplay></audio> 
+
+<p>Para adicionar o audio, é necessario utilizar a tag &lt;audio&gt;&lt;/audio&gt; e colocar alguns parametros dentro da tag, sendo esses parametro:
+    <br>
+     &lt;audio src=<abbr title="digitar nome do arquivo">""</abbr> controls autoplay&gt;&lt;/audio&gt;</p>
+
+<p>
+    Se quiser também da para deixar reproduzindo em loop, basta penas adicionar o parametro loop, ficando assim &lt;audio src=<abbr title="digitar nome do arquivo">""</abbr> controls autoplay loop&gt;&lt;/audio&gt;
+</p>
+<audio src="midia/Allemande (Sting) - Wahneta Meixsell.mp3" controls autoplay loop></audio>
+</body>
+</html>

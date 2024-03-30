@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas para configuração </title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+<hr>
+    <h2>Negrito / Destaque ( <strong>&lt;strong&gt;&lt;/strong&gt;</strong>)</h2>
+<p>Nesta frase temos um <b> termo em Negrito</b> usando a tag &lt;b&gt; &lt;/b&gt;.<br> 
+    <b>OBS.: a tag &lt;b&gt; &lt;/b&gt; (não semântica).</b> </p>
+<p>Nesta frase, temos um <strong> termo em destaque</strong> usando a tag &lt;strong&gt;&lt;/strong&gt;.</p>
+<b>OBS.: estas são as duas formas para utilização de NEGRITO  não obsoleta, ainda utilizada em HTML5.</b>
+<hr>
+
+<!-- parte 2-->
+<h2>Italíco / Ênfase ( <em>&lt;em&gt; &lt;/em&gt;</em> )</h2>
+<p>Netas frase, temos um <i>termo em Italíco</i> usando &lt;i&gt;&lt;/i&gt; (não semântica).</p>
+
+<p>Nesta frase, temos um <em> termo em ênfase</em> usando a tag &lt;em&gt; &lt;/em&gt; (semântica).</p>
+<hr>
+
+<!-- parte 3-->
+<h2> Texto marcado <mark>(marca-texo &lt;mark&gt;&lt;/mark&gt;)</mark> </h2>
+
+<p>Podemos criar também <mark> um texto marcado </mark> usando a tag &lt;mark&gt;&lt;/mark&gt;. </p>
+<br>
+
+<p><strong>
+    OBS.:</strong> tambem podemos estilizar a cor do marca texto, porém iremos usar (.css). </p>  
+
+   <p>&lt;mark style="escolher a cor ou digitar o nome ou codigo da cor."&gt; <br>
+     <br></p>
+
+<mark style="background-color:red"> <strong>exemplo de estilização com marca-texto de outra cor. </mark></strong> </mark> <br>
+     <p>OBS.: adicionei negrito para ficar melhor a leitura.</p>
+<p> por padrão a cor digitada dentro do  mark serve apenas para aquela marcação, eu quiser deixar daquela cor eu tenho que criar um selotor no início do codigo abaixo do &lt;title&gt;&lt;/title&gt;. <br>
+    <br>
+
+    exemplo: <br>
+    <br>
+    &lt;style&gt; <br>
+    <br> 
+    mark{ <br>
+        background-color:red;
+    <br> }
+    <br>
+    &lt;/style&gt; </p>
+ <p>vai servir apenas para esta página; da para usar em outras páginas, mas ai tera que usar uma pagina em (.css).</p> 
+
+ <!-- parte 4 -->
+ <hr>
+ <h2>Texto ( <big> Grande &lt;big&gt;&lt;/big&gt;</big> ) (   <small> Pequeno &lt;small&gt;&lt;/small&gt;</small> )</h2>
+
+ <p>para deixar a letra do texto <small><strong>menor</strong></small> da para usar a tag: &lt;small&gt;&lt;/small&gt;. <br>
+     para deixar <big><strong>grande</strong></big> da para usar por enquanto a tag: &lt;big&gt;&lt;/big&gt; porém ela (não é semântica) e já caiu em desuso e logo ira para de funcinar. </p>
+     <p>
+         <strong>OBS.: dá para configurar o tamanho da letra utilizando o (.css), criando um selor para o texto.</strong>
+     </p>
+
+     <p>OBS.: coloquei em negrito para ver melhor a mundança.</p>
+<!-- parte 5-->    
+<hr>
+<h2>Texto deletado (<del> &lt;del&gt;&lt;/del&gt;</del>)</h2>
+<p>
+    Podemos marcar um <del>texto</del> como excluído para indicar que ele deve ser lido, mas não considerado.
+</p> 
+
+   <p> para isso usamos a funçãos: &lt;del&gt;&lt;/del&gt;.</p>
+
+
+
+     <!-- parte 6 -->
+<hr>
+<h2>Texto inserido ( <ins>&lt;ins&gt;&lt;/ins&gt;</ins> ) </h2>
+
+<p>
+    Podemos marcar <ins>um texo como inserido</ins> uma ênfase e indicar que ele foi adicionado depois.
+</p>
+
+<p> utilizando a tag: &lt;ins&gt;&lt;/ins&gt;</p>
+
+<p>dá para <u>utilizar</u> por enquanto a tag &lt;u&gt; porém ela é (não se mantica) e logo pode cair em desuso.</p>
+
+<!-- parte 7-->
+<hr>
+<h2>Texto sobre-escrito( X<sup>2</sup>+5 &lt;sup&gt;&lt;/sup&gt; )</h2>
+
+<p>
+para inserir coisas do tipo: X<sup>2</sup>+5.
+</p>
+<p> utiliza a tag: &lt;sup&gt;&lt;/sup&gt;.</p>
+
+<p>exemplo:</p>
+
+<p>x&lt;sup&gt;2&lt;/sup&gt;+5</p>
+
+<!-- parte 8 -->
+<hr>
+<h2>Texto sob-escrito ( H<sub>2</sub>O &lt;sub&gt;&lt;/sub&gt; )</h2>
+
+<p>
+    para inserir coisas do tipo: H<sub>2</sub>O.
+</p>
+
+<p>
+    utiliza a tag: &lt;sub&gt;&lt;/sub&gt;
+</p>
+
+ <hr>
+<!-- atalhos e dicas-->
+
+<h2>Atalho para adicionar tags em texto ou frases</h2>
+
+<p>Ao selecionar um texto do começo ao fim, aperte (ctrlt + shift + p): gera um atalho na pesquisa, selecine a opção (Emmet: warp with abbreviation) e precione enter duas vezes, sendo uma para selecionar a configuração e depois digite a  &lt;tag&gt; que vc quer, e presine enter.</p>
+
+<p>segue print de exemplo:</p> <br>
+<br>
+<p><b>primeiro print para usar codigo.</b></p> <br>
+<img src="print de codigo/Captura de tela 2024-01-05 182606.png" alt="primeiro print para usar codigo"> <br>
+
+<br>
+
+<p><b>segundo print para usar codigo.</b></p> <br>
+<br>
+
+<img src="print de codigo/Captura de tela 2024-01-05 183135.png" alt="segundo print para usar codigo">
+
+
+</body>
+</html>

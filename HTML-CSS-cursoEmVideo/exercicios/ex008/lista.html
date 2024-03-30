@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>litas</title>
+</head>
+<body>
+
+    <!-- dicas para lista 1-->
+    <h1> Trabalhando com Listas</h1>
+
+    <h2>Litas Ordernas ( &lt;li&gt;&lt;/li&gt;, &lt;ol&gt;&lt;/ol&gt;, &lt;ol type=""&gt;&lt;/ol&gt; ) </h2>
+
+    <ol type="">
+        <li> Acordar</li>
+        <li>Ligar para o joão</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almocar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>dormir</li>
+    </ol>
+
+
+    <p>
+<pre>
+    <mark style=" background-color: rgb(255, 0, 0);">OBS.:</mark>a tag &lt;li&gt; cria um padrão de lista, adicinando &lt;ol&gt;&lt;/ol&gt;, com essa tag adicianada antes, cria uma lista ordenada.
+    
+    com a tag &lt;ol&gt;&lt;/ol&gt;, da para adicionar a a função type="". ai dentro dessa função da para definir como vai ser a a ordem da lista,
+    se vai ser por letra ou numero e qual a posição do mardador, se vai ser em ordem ou se vai ser de outro jeito.
+    
+    fazendo isso, a tag fica &lt;ol type=""&gt;&lt;/ol&gt;, ai esolhemos como vai ser o marcador.
+    
+    <mark style="background-color: rgb(18, 249, 18)">EXEMPLO:</mark>
+</pre>
+
+&lt;ol type=" 1 ou a ou A ou I ou i"&gt;
+&lt;li&gt;pera
+&lt;li&gt;maçã
+&lt;li&gt;uva
+
+&lt;/ol&gt;
+
+colocando assim, ira ficar nessa forma:
+
+<ol>
+<li>pera</li><li>macã</li><li>uva</li> <pre>                                       ou add a função type e colocando a letra "I" na fução &lt;ol type="I"&gt;&lt;/ol&gt;</pre>
+</ol>
+    <ol type="I">
+    <li>pera</li><li>maçã</li><li>uva</li>
+    </ol>
+    </p>
+    
+     <!-- dicas para lista 2 -->
+    <hr>
+                 <h2>Listas não Ordenada( &lt;ul&gt;&lt;/ul&gt; ) </h2>
+<p>
+    Criando uma lista não ordenada utilizando a tag &lt;ul&gt;&lt;/ul&gt;:
+    <ul>
+        <li>banana</li><li>abacaxi</li><li>manga</li><li>laránja</li>   <pre>                             ou add a função type e colocando a nome do formato que quer que seja antes da frase  na fução ex: &lt;ul type="square"&gt;&lt;/ul&gt;, criando assim um quadrado na enumeração da lista.</pre>
+    </ul>
+        <ul type="square">
+            <li>banana</li><li>abacaxi</li><li>manga</li><li>laránja</li>
+        </ul>
+
+<mark style="background-color: rgb(19, 135, 198);">OBS.:</mark> na lista &lt;ul type="***"&gt;&lt;/ul&gt; e possivel adicionar no lugar dos *** apenas três caracteristica para o denho de enumeração; sendo eles: disc (que jé é ele por padão ), circle e square
+</p>
+
+<hr>
+
+<h2>Juntando listas versão 1.0</h2>
+
+<h4>Minhas linguagens favoritas</h4>
+
+<ol>
+    <li>Antigas</li>
+       
+       <ol type="I">
+                                                 <br>
+            <li>Clipper</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+       </ol>
+                                                 <br>
+       <li>novas</li>
+                                                 <br>
+       <ol>
+        <li>PHP</li>
+        <li>Phyton</li>
+        <li>JavaScript</li>
+        <li>Kotlin</li>
+       </ol>
+
+</ol>
+<p> <mark style="background-color: red;">OBS.:</mark> nesta lista temos uma lista dentro de outra lista.</p>
+<p>Ela esta funcinando, como a criação de uma lista com outra por dentro; na primeira teve ate uma estilização, com type=I. Ficando assim o codigo:</p>
+<p>
+    <pre>
+&lt;ol&gt;
+        
+    &lt;li&gt;Antigas&lt;/li&gt;
+        
+        &lt;ol type="I"&gt;
+                                                  <br>
+             &lt;Clipper&gt;
+             &lt;Fortran&gt;
+             &lt;Delphi&gt;
+        
+        &lt;/ol&gt;
+
+                              <mark style="background-color: rgb(255, 3, 209);">Já na segunda lista, ela ficou padrão!</mark>
+
+    </pre>
+
+</p>
+<p>
+<pre>
+    
+          &lt;ol&gt;
+                 &lt;PHP&gt;
+                 &lt;Phyton&gt;
+                 &lt;JavaScript&gt;
+                 &lt;Kotlin&gt;
+          &lt;/ol&gt;
+    
+&lt;/ol&gt;
+    
+</pre>
+</p>
+
+<p>
+    <h4>Meus jogos favorito</h4>
+
+<ol>
+
+<li>PlayStation1</li>
+<ul>
+    <li>Mario</li>
+    <li>Resident Evil 3</li>
+</ul>
+
+<li>PlayStation2</li>
+<ul>
+    <li>God of Wor</li>
+    <ul type="square">
+        <li>God of Wor 1</li>
+        <li>God of Wor 1</li>
+    </ul>
+    <li>Resident evil 4</li>
+</ul>
+</ol>
+
+</p>
+<p>
+    <h5><mark style="background-color: rgb(186, 129, 244);">EXEMPLO DE COMO FICOU A BACKSTAGE DO CODIGO ACIMA</mark></h5>
+    <pre>
+        &lt;ol&gt;
+
+    &lt;li&gt;PlayStation1&lt;/li&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Mario&lt;/li&gt;
+        &lt;li&gt;Resident Evil 3&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;li>PlayStation2&lt;/li&gt;
+    &lt;ul&gt;
+        &lt;li&gt;God of Wor&lt;/li&gt;
+        &lt;ul type="square"&gt;
+&lt;            &gt;li&gt;God of Wor 1&lt;/li&gt;
+            &gt;li&gt;God of Wor 1/&lt;li&gt;
+            &lt;/ul&gt;
+        &gt;li&gt;Resident evil 4&lt;/li&gt;
+    &gt;/ul&gt;
+    &gt;/ol&gt;
+    </pre>
+</p>
+<hr>
+<h2> Lista de Definições( &lt;dt&gt;&lt;/dt&gt; e &lt;/dd&gt;&lt;/dd&gt; ) </h2>
+
+<p>&lt;dt&gt;&lt;/dt&gt;: lista de termo.</p>
+<p>&lt;dd&gt;&lt;/dd&gt;: lista de Descrição.</p>
+<dt>termo</dt>
+<dd>Descrição</dd>
+<p>--------------------</p>
+<dt>HTML</dt>
+<dd>Linguagem de marcação para criação de conteúdo de um site.</dd>
+<dt>CSS</dt>
+<dd>Linguagem de marcação para a criação do design de um site.</dd>
+<dt>JavaScript</dt>
+<dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+
+<p><mark style="background-color: rgb(116, 248, 9);">OBS.:</mark> BACKSTAGE do exemplo de cima.</p>
+
+<p>
+    <pre>
+        &lt;dt&gt;HTML&lt;/dt&gt;
+        &lt;dd&gt;Linguagem de marcação para criação de conteúdo de um site.&lt;/dd&gt;
+        &lt;dt&gt;CSS&lt;/dt&gt;
+        &lt;dd&gt;Linguagem de marcação para a criação do design de um site.&lt;/dd&gt;
+        &lt;dt&gt;JavaScript&lt;/dt&gt;
+        &lt;dd&gt;Linguagem de programação para a criação de interatividade de um site.&lt;/dd&gt;
+    </pre>
+</p>
+<hr>
+
+</body>
+</html>
